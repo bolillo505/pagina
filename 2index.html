@@ -1,0 +1,56 @@
+"<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FelicidadesMamá</title>
+    <link rel="stylesheet" href="2style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class = "logo" id="logo">Autor: Allan samuel D'arbelles Bravo</a>
+        <ul>
+            <li><a href="#" class="active">Felicidades</a></li>
+            <li><a href="#"</a>Mamá</li>
+            <li><a href="#">En</a></li>
+            <li><a href="#">Tu</a></li>
+            <li><a href="#">Dia</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="imagenes/stars.png" id="stars" alt="">
+        <img src="imagenes/moon.png" id="moon" alt="">
+        <img src="imagenes/mountains_behind.png" id="mountains_behind" alt="">
+        <h2 id="text">Felicidades Mamá</h2>
+        <a href="#sec" id="btn">Leer</a>
+        <img src="imagenes/mountains_front.png" id="mountains_front" alt="">
+    </section>
+    <div class="sec" id="sec">
+        <p>Eres tan increible, especial e inolvidable que en tu dia te mereces algo que este a tu altura. Que tengas un maravilloso día, lleno de ilusiones y buenos deseos para este y los días por venir.<br></br>Que la sabiduría que acumulaste en ti todo este tiempo siga creciendo a lo largo de tu vida.<br></br>Te deseo en este día de las madres que disfrutes cada momento al máximo, ahora y siempre<br></br>Te deseo un feliz día, lleno de virtud y alegría. Un abrazo que te de calor, y mucho, mucho amor de parte de tus hijos que te aman con la vida. Y mis mejores deseos, para que puedas llegar bien lejos. Que se cumplan todos tus sueños.<br></br>En este día tan especial que tu  vida esté llena de magia y felicidad. Que la luz del sol ilumine tus días para que no pierdas de vista tus objetivos, y que el brillo de la Luna ilumine tus noches para que nunca dejen de ser magicas.<br></br>Espero que desde que despiertes recibas sorpresas y abrazos. Toda persona que te conoce, te tiene un cariño muy especial, y es tu culpa por ser una persona sin igual. Agradezco a la vida por darme una madre como tú; es una bendicion muy grande, por eso agradezco a Dios cada día de tu vida. Celebra en Grande.<br></br>Tus hijos te desean que siempre estés radiante incluso cuando las circuncias se ponen difíciles.<br></br>Ojalá Dios nos permita tenerte al lado durante muchos años, porque aunque nos pelees sabemos que lo haces con amor y para enseñar.<br></br>Ya que hoy es tu día voy a aprovechar para expresarte que eres la mejor madre del Mundo. Solamente con saber que estás para ayudarme me es más fácil sonreir cada dia a pesar de las dificultades. Mi mejor deseo es que tu vida este llena de dicha y felicidad desde ahora y por siempre.<br></br>Quiero expresarte mis mas sinceros deseos de alegria en este dia tan importante. Aprovecha para compartir con tus seres queridos. Estos son los deseos más puros de tus hijos que siempre quiren que recuerdes que: TE AMAMOS.</p>
+        <h2 class="end">Felicidades Mamá</h2>
+    </div>
+
+    <script>
+        let stars = document.getElementById("stars");
+        let moon = document.getElementById("moon");
+        let mountains_behind = document.getElementById("mountains_behind");
+        let text = document.getElementById("text");
+        let btn = document.getElementById("btn");
+        let mountains_front = document.getElementById("mountains_front");
+        let header = document.querySelector("header");
+
+        window.addEventListener("scroll", function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + "px";
+            moon.style.top = value * 1.05 + "px";
+            mountains_behind.style.top = value * 0.5 + "px";
+            mountains_front.style.top = value * 0 + "px";
+            text.style.marginRight = value * 4 + "px";
+            text.style.marginTop = value * 1.2 + "px";
+            btn.style.marginTop = value * 1.2 + "px";
+            header.style.top = value * 0.5 + "px";
+        })
+    </script>
+</body>
+</html>
